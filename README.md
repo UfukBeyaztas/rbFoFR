@@ -174,31 +174,13 @@ in the paper; `design_setup(design)` returns their settings.
 | 6 | Local information at the null and under `H / sqrt(n)` |
 | 7 | Equal observed laws, and visible parity in an overlapping family |
 
-Designs 3, 6 and 7 take extra arguments:
+Designs 3, 6, and 7 take extra arguments:
 
 ```r
 sim_design(3, n = 1000, delta = 0.38, seed = 1)                  # window length
 sim_design(6, n = 1600, alternative = "local", seed = 2)         # H / sqrt(n)
 sim_design(7, n = 30000, family = "overlap", signs = c(1, -1), seed = 3)
 ```
-
-The comparison methods used in the paper's simulations (`pffr`, `FDboost`, and
-the uncorrected, linear and completion fits) are not part of the package.
-
-## Citation
-
-```r
-citation("rbFoFR")
-```
-
-Please cite both the paper and the package:
-
-> Beyaztas, U. (2026). Identification in nonlinear function-on-function
-> regression from fragments. Manuscript.
->
-> Beyaztas, U. (2026). rbFoFR: Nonlinear function-on-function regression from
-> fragments. R package version 0.1.0.
-> https://github.com/UfukBeyaztas/rbFoFR
 
 ## License
 
