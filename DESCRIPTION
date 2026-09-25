@@ -1,0 +1,25 @@
+Package: rbFoFR
+Type: Package
+Title: Nonlinear Function-on-Function Regression from Fragments
+Version: 0.1.0
+Authors@R: person(given = "Ufuk", family = "Beyaztas",
+    role = c("aut", "cre"), email = "ufuk.beyaztas@marmara.edu.tr",
+    comment = c(ORCID = "0000-0002-5208-4950"))
+Description: Estimation of the identifiable component of a nonlinear
+    function-on-function regression operator when each predictor curve is
+    observed only on a window of fixed length. The predictor is expanded in a
+    known localized basis with independent symmetric scores, and the operator
+    is a finite sum of products of scores (Walsh functionals) with
+    function-valued coefficients. The package computes co-observation
+    probabilities, the resolution order and the partition of interactions
+    into estimated, trimmed and non-resolvable directions, and fits the
+    resolvable coefficients by inverse-probability weighting or by a
+    complete-case ratio estimator without reconstructing unobserved parts of
+    the curves. Data generators for the seven simulation designs of the
+    accompanying paper, Fisher information and risk benchmarks, and
+    evaluation tools are included.
+License: GPL (>= 2)
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: stats, utils
+NeedsCompilation: no
